@@ -166,16 +166,27 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Success
                     contactForm.reset();
                     
-                    // Display submitted lead details summary dynamically in the feedback box
-                    const successMessage = `Thank you, ${formData.name}! Your request has been sent successfully. Details captured:<br>` +
-                        `• <strong>Email:</strong> ${formData.email}<br>` +
-                        `• <strong>Project:</strong> ${formData.projectType}<br>` +
-                        `• <strong>Budget:</strong> ${formData.budget}<br>` +
-                        `We have sent a copy of these details to <strong>vivekjoshi.53107@gmail.com</strong>. We will write to you within 24 hours.`;
-                    showFeedback('success', successMessage);
+                    // Construct WhatsApp Click-to-Chat message
+                    const whatsappMessage = `Hello! I would like to get a quote from The Site Squad.\n\n` +
+                        `• Name: ${formData.name}\n` +
+                        `• Email: ${formData.email}\n` +
+                        `• Phone: ${formData.phone || 'N/A'}\n` +
+                        `• Business: ${formData.businessName || 'N/A'}\n` +
+                        `• Project: ${formData.projectType}\n` +
+                        `• Budget: ${formData.budget}\n\n` +
+                        `Requirements:\n${formData.message}`;
+                    
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    const whatsappUrl = `https://wa.me/919106129458?text=${encodedMessage}`;
+                    
+                    // Open WhatsApp Click-to-Chat in a new window
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Display ONLY "Successfully Sent!" in the feedback box
+                    showFeedback('success', 'Successfully Sent!');
                     
                     // Also show a toast popup
-                    showPopup(`Details captured for ${formData.name}. Checked leads saved successfully.`);
+                    showPopup('Successfully Sent!');
                 } else {
                     // Business error from API
                     showFeedback('error', result.error || 'Something went wrong. Please check your fields.');
