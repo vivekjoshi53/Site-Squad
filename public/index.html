@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Site Squad | Modern Websites & Full Stack Apps</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="High-performance, modern and responsive websites built with React, Node.js and more. Fast delivery and affordable pricing by a dedicated MCA student developer.">
+    <meta name="keywords" content="web development, React, Node.js, frontend developer, full stack developer, portfolio website, e-commerce, website squad">
+    <meta name="author" content="The Site Squad">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons (Icons) -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper limit-width">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>The Site Squad<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#tech">Technologies</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn btn-outline nav-cta-mobile">Get Free Quote</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline nav-cta-desktop">Get Free Quote</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="hero-container limit-width grid-2">
+            <div class="hero-content scroll-animate" data-animation="fade-in-left">
+                <div class="badge-new">
+                    <span class="badge-pulse"></span> Available for New Projects
+                </div>
+                <h1>Build a Website That <span class="gradient-text">Grows Your Business</span></h1>
+                <p class="hero-desc">
+                    Modern, responsive, and high-performance websites built with React, Node.js, and cutting-edge web technologies. We turn your ideas into functional digital experiences.
+                </p>
+                <div class="hero-bullets">
+                    <div class="bullet-item"><i class="bx bx-check-circle"></i> Fast Delivery</div>
+                    <div class="bullet-item"><i class="bx bx-check-circle"></i> Mobile Responsive</div>
+                    <div class="bullet-item"><i class="bx bx-check-circle"></i> SEO Friendly</div>
+                    <div class="bullet-item"><i class="bx bx-check-circle"></i> Affordable Pricing</div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get Free Quote <i class="bx bx-right-arrow-alt"></i></a>
+                    <a href="#portfolio" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-visual scroll-animate" data-animation="fade-in-right">
+                <div class="visual-card-wrapper">
+                    <!-- Tech Stack Orbit Visual or Code Mockup -->
+                    <div class="code-editor-mockup">
+                        <div class="editor-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="editor-tab">SiteSquad.tsx</span>
+                        </div>
+                        <div class="editor-body">
+                            <pre><code><span class="keyword">const</span> <span class="function">TheSiteSquad</span> = () =&gt; {
+  <span class="keyword">return</span> (
+    <span class="tag">&lt;</span><span class="tag-name">div</span> <span class="attr-name">className</span>=<span class="attr-val">"modern-web"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;</span><span class="tag-name">Hero</span> <span class="attr-name">delivery</span>=<span class="attr-val">"fast"</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;</span><span class="tag-name">Services</span> <span class="attr-name">quality</span>=<span class="attr-val">"premium"</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;</span><span class="tag-name">Pricing</span> <span class="attr-name">budget</span>=<span class="attr-val">"affordable"</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;</span><span class="tag-name">Support</span> <span class="attr-name">type</span>=<span class="attr-val">"24/7-Direct"</span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="tag-name">div</span><span class="tag">&gt;</span>
+  );
+};
+<span class="keyword">export default</span> TheSiteSquad;</code></pre>
+                        </div>
+                    </div>
+                    <!-- Small absolute cards floating for visual depth -->
+                    <div class="floating-metric fm-1">
+                        <i class="bx bx-bolt-circle text-accent"></i>
+                        <div>
+                            <h4>100%</h4>
+                            <p>PageSpeed Score</p>
+                        </div>
+                    </div>
+                    <div class="floating-metric fm-2">
+                        <i class="bx bx-mobile-alt text-magenta"></i>
+                        <div>
+                            <h4>Responsive</h4>
+                            <p>Mobile-First Layout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">What We Offer</span>
+                <h2>Services Tailored to Your Needs</h2>
+                <p>We deliver comprehensive digital solutions to help individuals, startups, and established businesses excel online.</p>
+            </div>
+            
+            <div class="services-grid grid-3">
+                <!-- Service 1 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="100">
+                    <div class="service-icon"><i class="bx bx-briefcase"></i></div>
+                    <h3>Business Websites</h3>
+                    <p>Professional, clean and high-converting websites designed to represent your brand and attract local or global clients.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="service-icon"><i class="bx bx-user-pin"></i></div>
+                    <h3>Portfolio Websites</h3>
+                    <p>Stunning digital resumes for freelancers, artists, and professionals looking to show off their skills and land new roles.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="300">
+                    <div class="service-icon"><i class="bx bx-rocket"></i></div>
+                    <h3>Startup Landing Pages</h3>
+                    <p>Sleek, product-focused single page sites tailored to collect leads, display features, and launch your SaaS or product.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="100">
+                    <div class="service-icon"><i class="bx bx-shopping-bag"></i></div>
+                    <h3>E-commerce Websites</h3>
+                    <p>Fully functional online stores with cart integrations, smooth checkouts, and easy product inventory management.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="service-icon"><i class="bx bx-code-alt"></i></div>
+                    <h3>Custom Web Apps</h3>
+                    <p>Custom full stack web applications built from scratch with dedicated frontends, REST APIs, and database layers.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card scroll-animate" data-animation="fade-in-up" data-delay="300">
+                    <div class="service-icon"><i class="bx bx-trending-up"></i></div>
+                    <h3>SEO & Speed Audits</h3>
+                    <p>Optimize your page speed score to 100% and set up search console indexation for high search rankings.</p>
+                </div>
+                <!-- Service 7 (Span full width or highlighted) -->
+                <div class="service-card highlighted-service-card scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="service-icon"><i class="bx bx-envelope"></i></div>
+                    <h3>Contact Forms & Lead Generation</h3>
+                    <p>Integrated, secure contact forms connected directly to your email inbox and backend database to ensure you never miss a client lead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tech" class="tech-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">Our Tech Stack</span>
+                <h2>Modern Technologies for High-Performance Sites</h2>
+                <p>We leverage industry-standard technologies to ensure your web projects are scalable, fast, and maintainable.</p>
+            </div>
+
+            <div class="tech-grid scroll-animate" data-animation="fade-in-up">
+                <!-- React -->
+                <div class="tech-card" data-tech="react">
+                    <i class="bx bxl-react"></i>
+                    <span>React</span>
+                </div>
+                <!-- TypeScript -->
+                <div class="tech-card" data-tech="typescript">
+                    <i class="bx bxl-typescript"></i>
+                    <span>TypeScript</span>
+                </div>
+                <!-- Tailwind CSS -->
+                <div class="tech-card" data-tech="tailwind">
+                    <i class="bx bxl-tailwind-css"></i>
+                    <span>Tailwind CSS</span>
+                </div>
+                <!-- Node.js -->
+                <div class="tech-card" data-tech="nodejs">
+                    <i class="bx bxl-nodejs"></i>
+                    <span>Node.js</span>
+                </div>
+                <!-- PHP -->
+                <div class="tech-card" data-tech="php">
+                    <i class="bx bxl-php"></i>
+                    <span>PHP</span>
+                </div>
+                <!-- MySQL -->
+                <div class="tech-card" data-tech="mysql">
+                    <i class="bx bxs-data"></i>
+                    <span>MySQL</span>
+                </div>
+                <!-- MongoDB -->
+                <div class="tech-card" data-tech="mongodb">
+                    <i class="bx bxl-mongodb"></i>
+                    <span>MongoDB</span>
+                </div>
+                <!-- REST APIs -->
+                <div class="tech-card" data-tech="apis">
+                    <i class="bx bx-transfer-alt"></i>
+                    <span>REST APIs</span>
+                </div>
+                <!-- Responsive Design -->
+                <div class="tech-card" data-tech="responsive">
+                    <i class="bx bx-devices"></i>
+                    <span>Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section section-padding">
+        <div class="limit-width">
+            <div class="grid-2 align-center">
+                <div class="why-us-left scroll-animate" data-animation="fade-in-left">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2>A Tailored Approach to Web Development</h2>
+                    <p>We remove the complexity of launching a website. By working directly with the developer, you get custom solutions without the agency markup.</p>
+                    
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-paint-roll"></i></div>
+                            <div>
+                                <h4>Modern UI/UX Design</h4>
+                                <p>Sleek, eye-catching layouts following the latest design aesthetics.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-time-five"></i></div>
+                            <div>
+                                <h4>Fast Development</h4>
+                                <p>Optimized coding workflow to deliver your site ahead of schedule.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-navigation"></i></div>
+                            <div>
+                                <h4>Mobile-First Approach</h4>
+                                <p>Perfect presentation across smartphones, tablets, and desktops.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-trending-up"></i></div>
+                            <div>
+                                <h4>SEO Optimized</h4>
+                                <p>Semantic HTML5 and meta setups to boost search engine visibility.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-rupee"></i></div>
+                            <div>
+                                <h4>Affordable Pricing</h4>
+                                <p>Flexible packages designed to meet the budgets of startups and individuals.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-chat"></i></div>
+                            <div>
+                                <h4>Direct Developer Communication</h4>
+                                <p>Skip the account managers. Speak directly to the engineer building your site.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="bx bx-support"></i></div>
+                            <div>
+                                <h4>Post-Launch Support</h4>
+                                <p>We're here to help you update, maintain, and secure your site after launch.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-us-right scroll-animate" data-animation="fade-in-right">
+                    <div class="founder-card-wrapper">
+                        <div class="founder-card">
+                            <div class="founder-glow"></div>
+                            <div class="founder-avatar">
+                                <i class="bx bx-user"></i>
+                            </div>
+                            <h3>Personalized Care</h3>
+                            <p class="founder-title">Student Developer Ethos</p>
+                            <blockquote class="founder-quote">
+                                "As a solo developer pursuing my Master of Computer Applications (MCA), I bring structured computer science principles and fresh modern framework expertise straight to your projects."
+                            </blockquote>
+                            <div class="founder-footer">
+                                <span class="badge-custom">Authentic & Dedicated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">Demo Projects</span>
+                <h2>Pre-Built Solutions & Demos</h2>
+                <p>Take a look at the types of websites we build. We can customize any of these templates or build you a bespoke solution.</p>
+            </div>
+
+            <div class="portfolio-grid grid-3">
+                <!-- Project 1 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="100">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img restaurant-mock">
+                            <div class="mock-content">
+                                <span class="restaurant-logo">🍽️ The Green Table</span>
+                                <p>Artisan Culinary Experience</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">Restaurant Website</span>
+                        <h3>The Green Table</h3>
+                        <p>Menu showcase, reservation forms, and local map search optimization.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img gym-mock">
+                            <div class="mock-content">
+                                <span class="gym-logo">💪 Apex Fitness</span>
+                                <p>Unleash Your Inner Athlete</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">Gym Website</span>
+                        <h3>Apex Fitness</h3>
+                        <p>Class schedules, trainer profiles, membership pricing tables, and lead capture.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="300">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img realestate-mock">
+                            <div class="mock-content">
+                                <span class="realestate-logo">🏠 Prime Estates</span>
+                                <p>Discover Your Dream Home</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">Real Estate</span>
+                        <h3>Prime Estates</h3>
+                        <p>Property listings with filters, responsive galleries, and contact agent forms.</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="100">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img portfolio-mock">
+                            <div class="mock-content">
+                                <span class="portfolio-logo">🎨 Alex Dev</span>
+                                <p>Interactive Creative Engineer</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">Personal Portfolio</span>
+                        <h3>Alex Dev</h3>
+                        <p>Minimalist dark mode resume with timeline animations and projects showreel.</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img ecommerce-mock">
+                            <div class="mock-content">
+                                <span class="ecommerce-logo">🛍️ Aura Trends</span>
+                                <p>Curated Modern Apparel</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">E-commerce Store</span>
+                        <h3>Aura Trends</h3>
+                        <p>Online catalog with filter sidebar, product detail sheets, and shopping cart simulation.</p>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="portfolio-card scroll-animate" data-animation="fade-in-up" data-delay="300">
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-mock-img saas-mock">
+                            <div class="mock-content">
+                                <span class="saas-logo">☁️ TaskFlow SaaS</span>
+                                <p>Simplify Team Workflows</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="btn-preview">Preview Template</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">SaaS Landing Page</span>
+                        <h3>TaskFlow SaaS</h3>
+                        <p>High-conversion landing page with interactive pricing plans and feature lists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="process-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">How We Work</span>
+                <h2>The Development Journey</h2>
+                <p>A step-by-step collaborative process to translate your concept into a successful online product.</p>
+            </div>
+
+            <div class="process-timeline scroll-animate" data-animation="fade-in-up">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We discuss your goals, target audience, page structures, and reference designs to outline requirements.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>UI/UX Design</h3>
+                        <p>We create beautiful high-fidelity mockups of your homepage and key pages to align on aesthetics.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>We write clean, semantic code using lightweight frameworks to build a responsive and fast-loading website.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>Testing & Optimization</h3>
+                        <p>We audit the site for performance, mobile responsiveness, SEO checklist criteria, and cross-browser bugs.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">05</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>We handle hosting setup, deploy the files live, and provide dedicated support for any initial changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">Fair Packages</span>
+                <h2>Affordable Project Packages</h2>
+                <p>No monthly retainer contracts. Clear scopes, prompt delivery, and pricing that grows with you.</p>
+            </div>
+
+            <div class="pricing-grid grid-3">
+                <!-- Simple Plan -->
+                <div class="pricing-card scroll-animate" data-animation="fade-in-up" data-delay="100">
+                    <div class="pricing-header">
+                        <h3>Simple Plan</h3>
+                        <p class="plan-target">Individuals & Small Businesses</p>
+                        <div class="price">
+                            <span class="price-prefix">Starting From</span>
+                            <span class="price-amount">₹4,999</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="bx bx-check"></i> 2-3 Customized Pages</li>
+                        <li><i class="bx bx-check"></i> 100% Responsive Design</li>
+                        <li><i class="bx bx-check"></i> Dynamic Contact Form</li>
+                        <li><i class="bx bx-check"></i> Fast-Loading Performance</li>
+                        <li class="disabled"><i class="bx bx-x"></i> SEO Meta Optimizations</li>
+                        <li class="disabled"><i class="bx bx-x"></i> Backends & Database</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-outline select-plan-btn" data-plan="Simple">Choose Simple</a>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Recommended) -->
+                <div class="pricing-card recommended scroll-animate" data-animation="fade-in-up" data-delay="200">
+                    <div class="recommended-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Plan</h3>
+                        <p class="plan-target">Growing Businesses</p>
+                        <div class="price">
+                            <span class="price-prefix">Starting From</span>
+                            <span class="price-amount">₹14,999</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="bx bx-check"></i> Up to 8 Customized Pages</li>
+                        <li><i class="bx bx-check"></i> Premium UI Elements</li>
+                        <li><i class="bx bx-check"></i> Micro-Animations & Interactivity</li>
+                        <li><i class="bx bx-check"></i> SEO Core Basics & Speed Tuning</li>
+                        <li><i class="bx bx-check"></i> Advanced Contact Form API</li>
+                        <li class="disabled"><i class="bx bx-x"></i> Custom Dashboard & DB</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary select-plan-btn" data-plan="Pro">Choose Pro</a>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card scroll-animate" data-animation="fade-in-up" data-delay="300">
+                    <div class="pricing-header">
+                        <h3>Premium Plan</h3>
+                        <p class="plan-target">Startups & Companies</p>
+                        <div class="price">
+                            <span class="price-prefix">Starting From</span>
+                            <span class="price-amount">₹29,999</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="bx bx-check"></i> Unlimited Tailored Pages</li>
+                        <li><i class="bx bx-check"></i> Full Stack Development</li>
+                        <li><i class="bx bx-check"></i> Database Integration (MySQL/Mongo)</li>
+                        <li><i class="bx bx-check"></i> Advanced SEO Tuning</li>
+                        <li><i class="bx bx-check"></i> User Auth & API Connectors</li>
+                        <li><i class="bx bx-check"></i> Dedicated Post-Launch Support</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-outline select-plan-btn" data-plan="Premium">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="limit-width">
+            <div class="testimonial-box scroll-animate" data-animation="fade-in-up">
+                <i class="bx bxs-quote-left quote-icon"></i>
+                <h2>Building Our First Success Stories</h2>
+                <p class="testimonial-text">
+                    Be one of our first clients and get dedicated, direct developer support at extremely affordable rates. We focus on delivering maximum quality to build a portfolio of successful partnerships.
+                </p>
+                <div class="testimonial-cta">
+                    <a href="#contact" class="btn btn-primary">Let's Build Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="limit-width">
+            <div class="section-header scroll-animate" data-animation="fade-in-up">
+                <span class="section-tag">Got Questions?</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services, development timeline, and pricing.</p>
+            </div>
+
+            <div class="faq-accordion-wrapper scroll-animate" data-animation="fade-in-up">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>What technologies do you use for development?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            We build modern interfaces using React and Tailwind CSS. For backend tasks and APIs, we write Node.js/Express scripts or PHP. Databases are set up using MongoDB or MySQL, depending on project needs. All sites are built mobile-first and optimized for speed.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Do you provide post-launch maintenance?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            Yes! We offer post-launch support to ensure everything runs smoothly. Pro plans receive basic post-launch verification, and Premium plans include one month of dedicated updates and security checks. Additional support packages can be customized.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>How long does a website take to build?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            Typically, a Simple Website (2-3 pages) takes 3-5 business days. A Pro Plan site (up to 8 pages with custom UI animations) takes 1-2 weeks. Full stack Premium web apps take 3-4 weeks depending on the complexity of features and integrations.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Can you help with domains and hosting setup?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            Absolutely. We walk you through purchasing your custom domain and choose the best affordable hosting provider (Netlify, Vercel, Hostinger, or AWS). We handle the deployment so that your site goes live securely.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <button class="faq-item-anchor" onclick="location.href='#contact'">
+                    <span class="faq-header">
+                        <span>Have another question? Send us a direct message!</span>
+                        <i class="bx bx-right-arrow-alt"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="limit-width grid-2 gap-4">
+            <div class="contact-details scroll-animate" data-animation="fade-in-left">
+                <span class="section-tag">Let's Connect</span>
+                <h2>Get a Free Project Consultation & Quote</h2>
+                <p>Fill out the form with your requirements. We will analyze your specifications and reply with a complete project draft and price estimation within 24 hours.</p>
+                
+                <div class="contact-cards">
+                    <div class="contact-info-card">
+                        <i class="bx bx-envelope"></i>
+                        <div>
+                            <h4>Email Us Directly</h4>
+                            <a href="mailto:vivekjoshi.53107@gmail.com">vivekjoshi.53107@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="bx bx-laptop"></i>
+                        <div>
+                            <h4>Student Developer Trust</h4>
+                            <p>Direct contact and direct coding. No middle-man sales agents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper scroll-animate" data-animation="fade-in-right">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row grid-2">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row grid-2">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="businessName">Business Name</label>
+                            <input type="text" id="businessName" name="businessName" placeholder="Acme Corp (Optional)">
+                        </div>
+                    </div>
+
+                    <div class="form-row grid-2">
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="" disabled selected>Select project type</option>
+                                <option value="Simple Business Website">Simple Business Website (2-3 Pages)</option>
+                                <option value="Pro Growing Business Website">Pro Business Website (Up to 8 Pages)</option>
+                                <option value="Startup Landing Page">Startup Landing Page</option>
+                                <option value="E-commerce Store">E-commerce Store</option>
+                                <option value="Custom Full Stack App">Custom Full Stack App</option>
+                                <option value="Admin Dashboard Portal">Admin Dashboard / Lead Portal</option>
+                                <option value="Other">Other Custom Development</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Approximate Budget *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="" disabled selected>Select budget range</option>
+                                <option value="Under ₹5,000">Under ₹5,000 (Simple Plan)</option>
+                                <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000 (Pro Plan)</option>
+                                <option value="₹15,000 - ₹30,000">₹15,000 - ₹30,000 (Premium Plan)</option>
+                                <option value="Above ₹30,000">Above ₹30,000 (Custom Enterprise)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Requirements & Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please describe what pages you need, any reference websites, and key features..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full-width">
+                        Send Message <i class="bx bx-paper-plane"></i>
+                    </button>
+                    
+                    <div id="form-feedback" class="form-feedback hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="limit-width footer-grid">
+            <div class="footer-about">
+                <a href="#" class="logo">
+                    <span class="logo-accent">&lt;</span>The Site Squad<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p class="about-statement">
+                    Founded and operated by a passionate MCA student developer focused on delivering modern and affordable web solutions.
+                </p>
+                <div class="social-icons">
+                    <a href="mailto:vivekjoshi.53107@gmail.com" aria-label="Gmail"><i class="bx bxl-gmail"></i></a>
+                    <a href="#" aria-label="Github"><i class="bx bxl-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tech">Technologies</a></li>
+                    <li><a href="#portfolio">Demo Projects</a></li>
+                    <li><a href="#pricing">Pricing Plans</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="bx bx-envelope"></i> vivekjoshi.53107@gmail.com</p>
+                <p><i class="bx bx-map"></i> Gandhinagar, Gujarat, India</p>
+                <p class="working-time"><i class="bx bx-time-five"></i> Responses within 24 hours</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="limit-width bottom-bar">
+                <p>&copy; 2026 The Site Squad. All Rights Reserved.</p>
+                <div class="bottom-bullets">
+                    <span>Modern Websites</span>
+                    <span>Full Stack Development</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead Submission Popup (Notification) -->
+    <div id="popup-notification" class="popup-notification hidden">
+        <i class="bx bx-check-circle success-icon"></i>
+        <div>
+            <h4>Message Sent!</h4>
+            <p id="popup-text">We'll review your lead and get back soon.</p>
+        </div>
+        <button id="close-popup-btn" aria-label="Close notification"><i class="bx bx-x"></i></button>
+    </div>
+
+    <!-- Modular JS -->
+    <script src="main.js"></script>
+</body>
+</html>
