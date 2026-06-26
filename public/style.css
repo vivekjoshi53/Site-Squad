@@ -925,7 +925,12 @@ p {
 }
 .gym-mock span { color: #ff007f; }
 
-.realestate-mock { background: linear-gradient(135deg, #182236 0%, #0b101c 100%); border-top: 3px solid #6366f1; }
+.realestate-mock { 
+    background: linear-gradient(rgba(24, 34, 54, 0.75), rgba(11, 16, 28, 0.9)), url('realestate_preview.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-top: 3px solid #6366f1; 
+}
 .realestate-mock span { color: #6366f1; }
 
 .portfolio-mock { background: linear-gradient(135deg, #211c2b 0%, #0e0b14 100%); border-top: 3px solid #8b5cf6; }
