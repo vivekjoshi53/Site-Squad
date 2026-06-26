@@ -909,7 +909,12 @@ p {
 }
 
 /* Specific Demo Mock Visuals (Beautiful CSS Backgrounds) */
-.restaurant-mock { background: linear-gradient(135deg, #1b261e 0%, #0c120e 100%); border-top: 3px solid #10b981; }
+.restaurant-mock { 
+    background: linear-gradient(rgba(27, 38, 30, 0.75), rgba(12, 18, 14, 0.9)), url('restaurant_preview.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-top: 3px solid #10b981; 
+}
 .restaurant-mock span { color: #10b981; }
 
 .gym-mock { 
