@@ -949,7 +949,12 @@ p {
 }
 .portfolio-mock span { color: #8b5cf6; }
 
-.ecommerce-mock { background: linear-gradient(135deg, #25241b 0%, #11100c 100%); border-top: 3px solid #fbbf24; }
+.ecommerce-mock { 
+    background: linear-gradient(rgba(37, 36, 27, 0.75), rgba(17, 16, 12, 0.9)), url('ecommerce_preview.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-top: 3px solid #fbbf24; 
+}
 .ecommerce-mock span { color: #fbbf24; }
 
 .saas-mock { background: linear-gradient(135deg, #192527 0%, #0b1112 100%); border-top: 3px solid #00f0ff; }
