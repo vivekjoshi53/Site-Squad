@@ -818,6 +818,14 @@ p {
     color: #ffffff;
 }
 
+.founder-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
 .founder-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.25rem;
@@ -933,7 +941,12 @@ p {
 }
 .realestate-mock span { color: #6366f1; }
 
-.portfolio-mock { background: linear-gradient(135deg, #211c2b 0%, #0e0b14 100%); border-top: 3px solid #8b5cf6; }
+.portfolio-mock { 
+    background: linear-gradient(rgba(33, 28, 43, 0.75), rgba(14, 11, 20, 0.9)), url('vivek_portrait.jpg'); 
+    background-size: cover; 
+    background-position: center top; 
+    border-top: 3px solid #8b5cf6; 
+}
 .portfolio-mock span { color: #8b5cf6; }
 
 .ecommerce-mock { background: linear-gradient(135deg, #25241b 0%, #11100c 100%); border-top: 3px solid #fbbf24; }
